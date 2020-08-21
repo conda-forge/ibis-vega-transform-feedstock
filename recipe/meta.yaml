@@ -1,5 +1,5 @@
 {% set name = "ibis-vega-transform" %}
-{% set version = "5.1.1" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Quansight/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 1e36db25d6c3158015bd05eb3d30dc5afb9cf9dba0d92d2f6ed0c3e3e13b6b21
+  sha256: 67f09e1fb3588e7bce1b0453af4e02690771545a97287f4869ab6d18c12e4910
 
 build:
   noarch: python
@@ -46,7 +46,7 @@ about:
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
-  summary: 'Python evaluation of Vega transforms using Ibis expressions'
+  summary: Python evaluation of Vega transforms using Ibis expressions
   dev_url: https://github.com/Quansight/ibis-vega-transform
 
 extra:
