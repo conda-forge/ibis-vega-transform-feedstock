@@ -5,11 +5,11 @@ Home: https://github.com/Quansight/ibis-vega-transform
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ibis-vega-transform-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python evaluation of Vega transforms using Ibis expressions
 
-
+Development: https://github.com/Quansight/ibis-vega-transform
 
 Current build status
 ====================
