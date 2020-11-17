@@ -1,13 +1,13 @@
 {% set name = "ibis-vega-transform" %}
-{% set version = "5.2.0" %}
+{% set version = "5.2.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Quansight/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 67f09e1fb3588e7bce1b0453af4e02690771545a97287f4869ab6d18c12e4910
+  url: https://github.com/Quansight/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: a36e866358e45a55d1cf82807004d0ef0a5022c5e460eed537d99dffabdb53d8
 
 build:
   noarch: python
