@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install --no-deps -vv ."
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - jupyter-packaging 0.7.9
     - nodejs >=12
     - pip
-    - python >=3.7,<3.9
+    - python {{ python_min }}
     - setuptools >=46.4.0
   run:
     - altair >=4.0.0
@@ -38,12 +38,14 @@ requirements:
     - notebook
     - opentracing
     - pymapd >=0.24
-    - python >=3.7,<3.9
+    - python >={{ python_min }},<3.9
     - sqlalchemy <1.4
     - tornado
     - typing_extensions
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ibis_vega_transform
   commands:
